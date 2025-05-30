@@ -13,7 +13,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('https://shopping-backend-ybni.onrender.com')
+    fetch('https://shopping-backend-ybni.onrender.com/api/shopping')
       .then(res => res.json())
       .then(data => {
         setProducts(data.shopping);
